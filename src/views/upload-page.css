@@ -1,0 +1,106 @@
+.upload-page-container {
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.upload-page-navbar {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+.upload-page-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.upload-area {
+  border: 2px dashed #4ecdc4;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem 0;
+  position: relative;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.upload-area:hover {
+  border-color: #ff6b6b;
+}
+
+.upload-placeholder {
+  color: #888;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.file-input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.meme-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.meme-title-input {
+  padding: 1rem;
+  border: 2px solid #333;
+  border-radius: 4px;
+  background: #2a2a2a;
+  color: white;
+  font-size: 1.1rem;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.meme-title-input:focus {
+  outline: none;
+  border-color: #4ecdc4;
+}
+
+.mint-button {
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.mint-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.connect-wallet-message {
+  color: #ff6b6b;
+  margin-top: 1rem;
+} 
